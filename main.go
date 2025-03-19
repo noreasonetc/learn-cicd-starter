@@ -1,4 +1,4 @@
-package main
+package ma
 
 import (
 	"database/sql"
