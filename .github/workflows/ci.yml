@@ -20,7 +20,7 @@ jobs:
 
       - name: Go Unit Test
         run: go test -cover ./...
-    lint:
+  lint:
     name: linting 
     runs-on: ubuntu-latest
 
