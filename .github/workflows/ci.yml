@@ -20,8 +20,8 @@ jobs:
 
       - name: Go Unit Test
         run: go test -cover ./...
-  lint:
-    name: linting 
+  Style:
+    name: Style 
     runs-on: ubuntu-latest
 
     steps:
