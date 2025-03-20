@@ -5,6 +5,7 @@ import (
 	"embed"
 	"io"
 	"log"
+	"time"
 	"net/http"
 	"os"
 
@@ -91,6 +92,7 @@ func main() {
 	srv := &http.Server{
 		Addr:    ":" + port,
 		Handler: router,
+		ReadTimeout: 10 * time.Second,
 	}
 
 	log.Printf("Serving on port: %s\n", port)
